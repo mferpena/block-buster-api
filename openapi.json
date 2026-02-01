@@ -1,0 +1,106 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Block Buster API",
+    "description": "API para gestionar un repositorio de enlaces de descarga.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/downloads": {
+      "get": {
+        "operationId": "",
+        "summary": "Obtener lista de enlaces de descarga",
+        "description": "Devuelve una lista de todos los enlaces de descarga disponibles.",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "Respuesta exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "operationId": "",
+        "summary": "Agregar un nuevo enlace de descarga",
+        "description": "Crea un nuevo enlace de descarga en el repositorio.",
+        "tags": [],
+        "responses": {
+          "201": {
+            "description": "Respuesta exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/downloads/{id}": {
+      "get": {
+        "operationId": "",
+        "summary": "Obtener un enlace de descarga específico",
+        "description": "Devuelve un enlace de descarga específico por su ID.",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "Respuesta exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "",
+        "summary": "Eliminar un enlace de descarga",
+        "description": "Elimina un enlace de descarga del repositorio.",
+        "tags": [],
+        "responses": {
+          "204": {
+            "description": "Respuesta exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/downloads/search": {
+      "get": {
+        "operationId": "",
+        "summary": "Buscar enlaces de descarga",
+        "description": "Busca enlaces de descarga basados en un término de búsqueda.",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "Respuesta exitosa",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
